@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAFA"
+    android:backgroundTint="#FDC8C6"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#636FAE"
+            android:backgroundTint="#FDFFFF"
+            android:ellipsize="middle"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/message"
+            android:textColor="#D56161"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <Spinner
+            android:id="@+id/fruits_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="#FDFDFD"
+            android:entries="@array/fruititems" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:ellipsize="none"
+            android:onClick="choose"
+            android:text="@string/btn_choose"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/fruitText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="#B1DFE3"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/fruit_text"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:onClick="order"
+            android:paddingTop="4dp"
+            android:text="@string/order"
+            android:textSize="20sp"
+            app:iconPadding="15dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

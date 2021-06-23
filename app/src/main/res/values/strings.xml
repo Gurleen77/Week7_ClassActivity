@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Week7_ClassActivity</string>
+    <string name="message">Please pick one of the following</string>
+    <string name="btn_choose">Choose One</string>
+    <string name="fruit_text"></string>
+    <string name="order">Place your Order</string>
+    <string name="orderView">View the selected order</string>
+
+
+
+    <string-array name="fruititems">
+        <item>Banana</item>
+        <item>Kiwi</item>
+        <item>Mango</item>
+        <item>Cherry</item>
+        <item>Apple</item>
+        <item>Peach</item>
+
+    </string-array>
+    
+</resources>
